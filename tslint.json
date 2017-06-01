@@ -1,0 +1,135 @@
+{
+    /*
+     * Possible values:
+     * - the name of a built-in config
+     * - a string that can be resolved as a module that exports the config object, e.g.:
+     *   - an npm package name
+     *   - an npm package name followed by the path to a file inside
+     *   - a relative path to a JSON file
+     */
+    "extends": "tslint:latest",
+    "rulesDirectory": "./src",
+    "rules": {
+        /*
+         * Any rules specified here will override those from the base config we are extending.
+         */
+        "ordered-imports": "any",
+        "prefer-const": true,
+        "class-name": true,
+        "comment-format": [
+            true,
+            "check-space"
+        ],
+        "max-classes-per-file": [
+            true,
+            5
+        ],
+        "indent": [
+            true,
+            "spaces"
+        ],
+        "member-access": false,
+        "no-duplicate-variable": true,
+        "no-eval": true,
+        "no-internal-module": true,
+        "no-trailing-whitespace": true,
+        "no-var-keyword": true,
+        "quotemark": [
+            true,
+            "single"
+        ],
+        "one-line": [
+            true,
+            "check-open-brace",
+            "check-whitespace"
+        ],
+        "triple-equals": [
+            true,
+            "allow-null-check"
+        ],
+        "typedef-whitespace": [
+            true,
+            {
+                "call-signature": "nospace",
+                "index-signature": "nospace",
+                "parameter": "nospace",
+                "property-declaration": "nospace",
+                "variable-declaration": "nospace"
+            }
+        ],
+        "variable-name": [
+            true,
+            "ban-keywords"
+        ],
+        "whitespace": [
+            true,
+            "check-branch",
+            "check-decl",
+            "check-operator",
+            "check-separator",
+            "check-type"
+        ],
+        "interface-name": [
+            true,
+            "never-prefix"
+        ],
+        "object-literal-sort-keys": false,
+        "no-unused-expression": false
+    },
+    "jsRules": {
+        /*
+         * Any rules specified here will override those from the base config we are extending.
+         */
+        "ordered-imports": [
+            true,
+            {
+                "import-sources-order": "lowercase-last",
+                "named-imports-order": "lowercase-first"
+            }
+        ],
+        "prefer-const": true,
+        "indent": [
+            true,
+            "spaces"
+        ],
+        "max-classes-per-file": [
+            true,
+            5
+        ],
+        "no-duplicate-variable": true,
+        "no-eval": true,
+        "no-trailing-whitespace": true,
+        "one-line": [
+            true,
+            "check-open-brace",
+            "check-whitespace"
+        ],
+        "quotemark": [
+            true,
+            "single"
+        ],
+        "triple-equals": [
+            true,
+            "allow-null-check"
+        ],
+        "variable-name": [
+            true,
+            "ban-keywords"
+        ],
+        "whitespace": [
+            true,
+            "check-branch",
+            "check-decl",
+            "check-operator",
+            "check-separator",
+            "check-type"
+        ],
+        "object-literal-sort-keys": false
+    },
+    "rulesDirectory": [
+        /*
+         * A list of relative or absolute paths to directories that contain custom rules.
+         * See the Custom Rules documentation below for more details.
+         */
+    ]
+}

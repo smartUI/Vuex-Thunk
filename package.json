@@ -1,0 +1,56 @@
+{
+  "name": "vuex-thunk",
+  "version": "0.0.1",
+  "description": "thunk middleware for vuex",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fariyAhill/Vuex-Thunk.git"
+  },
+  "keywords": [
+    "vuex",
+    "thunk",
+    "vuex-middleware",
+    "flux"
+  ],
+  "author": "fairyAhill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fariyAhill/Vuex-Thunk/issues"
+  },
+  "homepage": "https://github.com/fariyAhill/Vuex-Thunk#readme",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-import": "^1.2.1",
+    "babel-plugin-module-resolver": "^2.7.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "cross-env": "^5.0.0",
+    "shelljs": "^0.7.7",
+    "ts-loader": "^2.1.0",
+    "tslint": "^5.4.0",
+    "typescript": "^2.3.4",
+    "vue-loader": "^12.2.1",
+    "vue-template-compiler": "^2.3.3",
+    "vue-ts-loader": "0.0.3",
+    "webpack": "^2.6.1",
+    "webpack-dev-middleware": "^1.10.2",
+    "webpack-hot-middleware": "^2.18.0",
+    "webpack-merge": "^4.1.0"
+  },
+  "dependencies": {
+    "vuex": "^2.3.1"
+  },
+  "scripts": {
+    "test": "npm test",
+    "build": " cross-env NODE_ENV=production  node scripts/build.js",
+    "setup": "npm i && npm run dll"
+  },
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
+  }
+}
